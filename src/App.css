@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 520px;
+  background: linear-gradient(90deg, #7822e9 0%, #4a59e2 100%);
+  text-align: center;
+  margin: 90px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+}
+
+h1 {
+  margin: 32px 0;
+  color: whitesmoke;
+  font-size: 30px;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.todo-form {
+  margin-bottom: 32px;
+}
+
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  margin-right: 20px;
+  border-radius: 10px;
+  border: 2px solid #161a2b;
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: #ddd;
+  font-size: 16px;
+}
+
+.todo-input::placeholder {
+  color: #e2e2e2;
+}
+
+.todo-button {
+  padding: 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: linear-gradient(90deg, #5d0cff 0%, #9b00fa 100%);
+  color: #eee;
+  text-transform: capitalize;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  letter-spacing: 1px;
+}
+
+.todo-input.edit {
+  border: 2px solid #149fff;
+}
+
+.todo-button.edit {
+  background: linear-gradient(90deg, #149fff 0%, #117aff 100%);
+  padding: 16px 22px;
+  font-size: 15px;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: #161a2b;
+  background: linear-gradient(90deg, #ff7614 0%, #ff5411 100%);
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.todo-row:nth-child(4n + 1) {
+  background: linear-gradient(90deg, #5d0cff 0%, #9b00fa 100%);
+}
+
+.todo-row:nth-child(4n + 2) {
+  background: linear-gradient(90deg, #ff0cf1 0%, #fa0087 100%);
+}
+
+.todo-row:nth-child(4n + 3) {
+  background: linear-gradient(90deg, #149fff 0%, #117aff 100%);
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  margin-right: 5px;
+  color: #161a2b;
+}
+
+.edit-icon > path {
+  stroke: #161a2b;
+}
